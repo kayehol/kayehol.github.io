@@ -16,7 +16,10 @@
   "dependencies": {
     "gatsby": "^2.21.35",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.1.0",
+    "typeface-ubuntu": "0.0.65",
+    "typeface-vt323": "0.0.72"
   },
   "devDependencies": {
     "prettier": "2.0.5"
