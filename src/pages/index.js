@@ -5,7 +5,6 @@ import styled from 'styled-components'
 import Img from "gatsby-image"
 import "typeface-ubuntu"
 import "typeface-vt323"
-import "../styles/global.css"
 
 const Container = styled.div`
     display: flex;

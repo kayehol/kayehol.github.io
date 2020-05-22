@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import "typeface-ubuntu"
 import "typeface-vt323"
-import "../styles/global.css"
+import "./global.css"
 
 const Menu = styled.div`
   display: flex;
