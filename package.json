@@ -1,5 +1,5 @@
 {
-  "homepage":"https://github.com/kayehol/kayehol.github.io",
+  "homepage":"https://kayehol.github.io/",
   "name": "gatsby-starter-hello-world",
   "private": true,
   "description": "A simplified bare-bones starter for Gatsby",
@@ -14,7 +14,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "dependencies": {
     "gatsby": "^2.21.35",
