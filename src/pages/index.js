@@ -8,7 +8,6 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
     color: #fff;
-    margin: auto;
     padding: 60px 40px;
     h2 {
         font-family: 'vt323';
@@ -18,17 +17,29 @@ const Container = styled.div`
     }
     p {
         font-family: 'Ubuntu';
+        color: #919191;
+    }
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
     }
 `
 const PostWrapper = styled.div`
     padding: 20px;
+    border: 2px solid #7d34db;
+    h2 {
+      border-bottom: 2px solid #7d34db;
+      padding-bottom: 20px;
+    }
+    h4 a:link {
+      color: #fff;
+    }
 `
 
 const Post = (props) => (
     <PostWrapper>
         <h2>{props.node.frontmatter.title}</h2>
         <Img fluid={props.node.frontmatter.featuredImage.childImageSharp.fluid} />
-        <h4>{props.node.frontmatter.link}</h4>
+        <h4><a href={props.node.frontmatter.link}>{props.node.frontmatter.link}</a></h4>
         <p>{props.node.frontmatter.detalhes}</p>
     </PostWrapper>
 )
