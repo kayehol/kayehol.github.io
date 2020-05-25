@@ -31,13 +31,13 @@ const Contato = styled.div`
 export default () => (
   <Layout>
     <Contato>
-        <h2><a href="https://wa.me/5582003213377">(82) 99321 3377</a></h2>
-        <h2><a href="mailto:@kaye.holanda@gmail.com">kaye.holanda@gmail.com</a></h2>
+        <h2><a href="https://wa.me/5582003213377" target="_blank" rel="noopener noreferrer">(82) 99321 3377</a></h2>
+        <h2><a href="mailto:@kaye.holanda@gmail.com" >kaye.holanda@gmail.com</a></h2>
         <h2>
-          <a href="instagram.com/xeeeeeeeeeeeex">Instagram</a>
+          <a href="https://www.instagram.com/xeeeeeeeeeeeex/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </h2>
         <h2>
-          <a href="github.com/kayehol">github.com/kayehol</a>
+          <a href="https://github.com/kayehol/" target="_blank" rel="noopener noreferrer">github.com/kayehol</a>
         </h2>
     </Contato>
   </Layout>

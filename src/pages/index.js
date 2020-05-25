@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from "../components/layout"
 import { graphql } from "gatsby"
+import Layout from "../components/layout"
 import styled from 'styled-components'
 import Img from "gatsby-image"
 import "typeface-ubuntu"
@@ -9,18 +9,7 @@ import "typeface-vt323"
 const Container = styled.div`
     display: flex;
     flex-direction: row;
-    color: #fff;
     padding: 60px 40px;
-    h2 {
-        font-family: 'vt323';
-    }
-    h4 {
-        font-family: 'vt323';
-    }
-    p {
-        font-family: 'Ubuntu';
-        color: #919191;
-    }
     @media screen and (max-width: 480px) {
       flex-direction: column;
     }
@@ -28,12 +17,21 @@ const Container = styled.div`
 const PostWrapper = styled.div`
     padding: 20px;
     border: 2px solid #7d34db;
+    color: #fff;
     h2 {
       border-bottom: 2px solid #7d34db;
       padding-bottom: 20px;
+      font-family: 'vt323', sans-serif;
     }
     h4 a:link {
       color: #fff;
+    }
+    h4 {
+      font-family: 'vt323', sans-serif;
+    }
+    p {
+      font-family: 'Ubuntu';
+      color: #919191;
     }
 `
 
@@ -50,12 +48,13 @@ export default ({data}) =>
     <Layout>
         <Container>
             {
-                data.allMarkdownRemark.edges.map(({node}) =>(
-                    <Post node={node}></Post>
-                ))
+              data.allMarkdownRemark.edges.map(({node}) =>(
+                  <Post node={node}></Post>
+              ))
             }
         </Container>
-    </Layout>
+      </Layout>
+   
 
 export const query = graphql`
 query {
