@@ -21,11 +21,14 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-react-helmet`
+    /*
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-167306567-1",
       },
     },
+    */
   ],
 }
