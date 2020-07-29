@@ -52,7 +52,11 @@ const Post = (props) => (
 export default ({data}) => 
     <Layout>
       <Helmet>
-        <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101269509);</script>
+        <script>
+          {`
+          var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101269509);
+          `}
+        </script>
         <script async src="//static.getclicky.com/js"></script>
       </Helmet>
         <Container>
