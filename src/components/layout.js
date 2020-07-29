@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import {Helmet} from "react-helmet"
 import "typeface-ubuntu"
 import "typeface-vt323"
 import "./global.css"
@@ -64,10 +63,6 @@ const Container = styled.div`
 export default function Layout({ children }) {
   return (
     <Container>
-      <Helmet>
-        <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101269509);</script>
-        <script async src="//static.getclicky.com/js"></script>
-      </Helmet>
       <Menu>
         <h2>
           kayê<br></br>holanda

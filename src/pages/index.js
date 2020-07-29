@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import {Helmet} from "react-helmet"
 import Layout from "../components/layout"
 import styled from 'styled-components'
 import Img from "gatsby-image"
@@ -50,6 +51,10 @@ const Post = (props) => (
 
 export default ({data}) => 
     <Layout>
+      <Helmet>
+        <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101269509);</script>
+        <script async src="//static.getclicky.com/js"></script>
+      </Helmet>
         <Container>
             {
               data.allMarkdownRemark.edges.map(({node}) =>(
