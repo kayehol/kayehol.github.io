@@ -1,41 +1,37 @@
 import React from "react"
-import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import { graphql } from "gatsby"
 import styled from 'styled-components'
 import Img from "gatsby-image"
-import "typeface-ubuntu"
-import "typeface-vt323"
 
 const Container = styled.div`
     display: flex;
     flex-direction: row;
-    padding: 60px 20px;
-    @media screen and (max-width: 720px) {
+    color: #fff;
+    padding: 60px 40px;
+    h2 {
+        font-family: 'vt323';
+    }
+    h4 {
+        font-family: 'vt323';
+    }
+    p {
+        font-family: 'Ubuntu';
+        color: #919191;
+    }
+    @media screen and (max-width: 480px) {
       flex-direction: column;
     }
 `
 const PostWrapper = styled.div`
     padding: 20px;
     border: 2px solid #7d34db;
-    color: #fff;
-    width: 100%;
     h2 {
       border-bottom: 2px solid #7d34db;
       padding-bottom: 20px;
-      font-family: 'vt323', sans-serif;
     }
     h4 a:link {
       color: #fff;
-    }
-    h4 {
-      font-family: 'vt323', sans-serif;
-    }
-    p {
-      font-family: 'Ubuntu';
-      color: #919191;
-    }
-    @media screen and (max-width: 720px) {
-      width: auto;
     }
 `
 
@@ -52,17 +48,16 @@ export default ({data}) =>
     <Layout>
         <Container>
             {
-              data.allMarkdownRemark.edges.map(({node}) =>(
-                  <Post node={node} key={node.id}></Post>
-              ))
+                data.allMarkdownRemark.edges.map(({node}) =>(
+                    <Post node={node}></Post>
+                ))
             }
         </Container>
-      </Layout>
-   
+    </Layout>
 
 export const query = graphql`
 query {
-    allMarkdownRemark(sort: {fields:[frontmatter___date], order: ASC}) {
+    allMarkdownRemark {
       edges {
         node {
           id
@@ -77,11 +72,9 @@ query {
                 }
               }
             }
-            date
           }
         }
       }
-      distinct(field: frontmatter___date)
     }
   }
   

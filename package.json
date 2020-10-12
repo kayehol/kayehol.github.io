@@ -1,5 +1,5 @@
 {
-  "homepage": "https://kayehol.github.io/",
+  "homepage":"https://github.com/kayehol/kayehol.github.io",
   "name": "gatsby-starter-hello-world",
   "private": true,
   "description": "A simplified bare-bones starter for Gatsby",
@@ -13,22 +13,19 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.21.35",
     "gatsby-image": "^2.4.4",
     "gatsby-plugin-google-analytics": "^2.3.2",
-    "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sharp": "^2.6.6",
-    "gatsby-plugin-styled-components": "^3.3.2",
     "gatsby-source-filesystem": "^2.3.5",
     "gatsby-transformer-remark": "^2.8.10",
     "gatsby-transformer-sharp": "^2.5.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0",
     "styled-components": "^5.1.0",
     "typeface-ubuntu": "0.0.65",
     "typeface-vt323": "0.0.72"
