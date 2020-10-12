@@ -10,16 +10,20 @@ import "typeface-vt323"
 const Container = styled.div`
     display: flex;
     flex-direction: row;
-    padding: 60px 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 40px 10px;
     @media screen and (max-width: 720px) {
       flex-direction: column;
     }
 `
 const PostWrapper = styled.div`
-    padding: 20px;
+    padding: 10px 20px;
+    margin: 20px 0;
     border: 2px solid #7d34db;
     color: #fff;
-    width: 100%;
+    width: 300px;
     h2 {
       border-bottom: 2px solid #7d34db;
       padding-bottom: 20px;
@@ -71,7 +75,7 @@ export default ({data}) =>
 
 export const query = graphql`
 query {
-    allMarkdownRemark(sort: {fields:[frontmatter___date], order: ASC}) {
+    allMarkdownRemark(sort: {fields:[frontmatter___date], order: DESC}) {
       edges {
         node {
           id
