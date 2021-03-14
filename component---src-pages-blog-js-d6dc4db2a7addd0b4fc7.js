@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{vx99:function(n,a,e){"use strict";e.r(a);var t=e("q1tI"),o=e.n(t),i=e("Bl7J"),l=e("vOnD"),u=(e("JUcu"),l.a.div.withConfig({displayName:"blog__Blog",componentId:"hf1y77-0"})(['text-align:center;color:#fff;padding-top:50px;margin:auto;height:auto;width:auto;P{font-family:"VT323",sans-serif;font-size:3em;}']));a.default=function(){return o.a.createElement(i.a,null,o.a.createElement(u,null,o.a.createElement("p",null,"nada ainda :(")))}}}]);
+//# sourceMappingURL=component---src-pages-blog-js-d6dc4db2a7addd0b4fc7.js.map
