@@ -1,0 +1,91 @@
+body {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  background-color: #121212;
+  cursor: crosshair;
+}
+
+main {
+  background-color: #c7c7c7;
+  padding: 0.5em 1em;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+  font-family: "Georgia";
+}
+
+a:link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+a:hover {
+  opacity: 75%;
+}
+
+.prompt {
+  animation: blinker 1.5s linear infinite;
+  font-family: sans-serif;
+  margin-right: 0.5em;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.title-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chip {
+  padding: 0.5em;
+  background-color: #ff8000;
+  color: #FFF;
+  border-radius: 12%;
+  margin-right: 1em;
+  opacity: 100%;
+}
+
+.chip:hover {
+  opacity: 90%;
+}
+
+main h1,
+#more {
+  font-family: monospace;
+}
+
+#more {
+  background-color: #c7c7c7;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+#links {
+  display: flex;
+  flex-direction: row;
+}
+
+#links a {
+  margin-right: 2em;
+}
+
+@media only screen and (max-width: 820px) {
+  body {
+    width: 85%;
+    padding: 2em 0;
+
+  }
+}
