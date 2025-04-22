@@ -7,6 +7,9 @@ body {
   width: 50%;
   background-color: #121212;
   cursor: crosshair;
+  overflow-x: hidden;
+  background-blend-mode: screen;
+  background: url("https://1-background.com/images/stars-1/star-space-tile.jpg"), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F78%2Ffe%2Fc7%2F78fec78382def35577de453cc0eedce6.jpg&f=1&nofb=1&ipt=c6b47b6f8c9551d782c887f01bb162582c55bc5acd16332bc6c26c1defb51247");
 }
 
 main {
@@ -29,7 +32,7 @@ a:hover {
 }
 
 .prompt {
-  animation: blinker 1.5s linear infinite;
+  animation: blinker 1s linear infinite;
   font-family: sans-serif;
   margin-right: 0.5em;
 }
@@ -57,6 +60,25 @@ a:hover {
 
 .chip:hover {
   opacity: 90%;
+}
+
+.floating {
+  transform: translateY(0px);
+  animation: float 1.2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 main h1,
